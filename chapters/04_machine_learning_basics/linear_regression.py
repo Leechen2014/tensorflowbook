@@ -2,8 +2,8 @@
 
 import tensorflow as tf
 
-W = tf.Variable(tf.zeros([2, 1]), name="weights")
-b = tf.Variable(0., name="bias")
+W = tf.Variable(tf.zeros([2, 1]),dtype=tf.float32 ,name="weights") #  tensorflow 0.12
+b = tf.Variable(0.,dtype=tf.float32, name="bias")
 
 
 def inference(X):
@@ -35,8 +35,8 @@ def evaluate(sess, X, Y):
 # Launch the graph in a session, setup boilerplate
 with tf.Session() as sess:
 
-    tf.initialize_all_variables().run()
-
+    #tf.initialize_all_variables().run()
+    tf.global_variables_initializer().run() # new API tensorflow 0.12
     X, Y = inputs()
 
     total_loss = loss(X, Y)
