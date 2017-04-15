@@ -1,6 +1,6 @@
 # _TensorFlow for Machine Intelligence_
 
-#P.S.: will be modifed by tensorflow0.12.rc, and python3.5
+#__P.S.: will be modifed by tensorflow0.12.rc, and python3.5__
 ![TensorFlow for Machine Intelligence book cover](img/book_cover.jpg)
 
 Welcome to the official book repository for [_TensorFlow for Machine Intelligence_](https://bleedingedgepress.com/tensor-flow-for-machine-intelligence/)! Here, you'll find code from the book for easy testing on your own machine, as well as errata, and any additional content we can squeeze in down the line.
